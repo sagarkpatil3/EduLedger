@@ -1,0 +1,11 @@
+{
+  "name": "eduledger",
+  "version": "1.0.0",
+  "description": "EduLedger is a blockchain platform for secure issuance, storage, and verification of academic credentials. It ensures tamper-proof certificates and transcripts for instant, trusted verification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sagar Patil",
+  "license": "ISC"
+}

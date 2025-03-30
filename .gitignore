@@ -1,0 +1,20 @@
+# Ignore all node_modules folders recursively
+**/node_modules/
+
+# Ignore all .env files recursively
+**/.env
+
+# Logs
+**/*.log
+logs/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# MongoDB dump files (optional)
+dump/

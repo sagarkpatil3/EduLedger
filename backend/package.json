@@ -7,5 +7,12 @@
   },
   "author": "Sagar Patil",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "4.1",
+    "mongoose": "^8.13.1"
+  }
 }

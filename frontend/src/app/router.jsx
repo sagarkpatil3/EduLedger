@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import StudentDashboard from "../pages/StudentDashboard";
-import IssueCredential from "../pages/IssueCredential";
-import VerifyCredential from "../pages/VerifyCredential";
 import Layout from "../components/Layout";
+import StudentDashboard from "../features/student/ProtectedDashboard";
+import IssueCredential from "../features/issuer/IssueCredential";
+import VerifyCredential from "../features/verifier/VerifyCredential";
+import Login from "../features/auth/Login";
+import Register from "../features/auth/Register";
 
 const router = createBrowserRouter([
   {
@@ -17,9 +17,10 @@ const router = createBrowserRouter([
       { path: "/register", element: <Register /> },
       { path: "/dashboard", element: <StudentDashboard /> },
       { path: "/issue", element: <IssueCredential /> },
-      { path: "/verify", element: <VerifyCredential /> },
+      { path: "/verify", element: <VerifyCredential /> }
     ],
   },
 ]);
 
 export default router;
+

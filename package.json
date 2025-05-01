@@ -4,8 +4,14 @@
   "description": "EduLedger is a blockchain platform for secure issuance, storage, and verification of academic credentials. It ensures tamper-proof certificates and transcripts for instant, trusted verification.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "Sagar Patil",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }

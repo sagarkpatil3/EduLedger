@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const transactionSchema = new mongoose.Schema({
   fromInstitution: String,
   toStudent: String,
+  studentName: String,
   credentialData: {
     degree: String,
     grade: String,

@@ -10,12 +10,14 @@ const ledger = new Blockchain();
 
 exports.issueCredential = async (req, res) => {
   try {
-    const { fromInstitution, toStudent, credentialData } = req.body;
+    const { fromInstitution, toStudent, studentName, credentialData } =
+      req.body;
 
     // Step 1: Create a new transaction (in memory)
     const transaction = new Transaction(
       fromInstitution,
       toStudent,
+      studentName,
       credentialData
     );
 

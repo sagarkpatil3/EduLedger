@@ -1,10 +1,19 @@
 const express = require("express");
+const cors = require("cors");
 const connectDB = require("../config/db");
 const ledgerRoutes = require("./routes/ledger");
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 
 const app = express();
+require("dotenv").config();
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 
 // Middleware
 app.use(express.json());
